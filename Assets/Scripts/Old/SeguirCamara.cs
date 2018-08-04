@@ -7,7 +7,7 @@ public class SeguirCamara : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		target = GameObject.Find ("Camera");
 	}
 	
 	// Update is called once per frame

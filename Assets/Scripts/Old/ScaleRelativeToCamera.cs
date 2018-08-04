@@ -23,6 +23,8 @@ public class ScaleRelativeToCamera : MonoBehaviour
 		// if no specific camera, grab the default camera
 		if (cam == null)
 			cam = Camera.main; 
+
+		cam =GameObject.Find ("Camera").GetComponent<Camera>();
 	}
 
 	// scale object relative to distance from camera plane
