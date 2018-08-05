@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<Documment>
+	<IconTypes>
+		<IconType>
+			<Name>Planta</Name>
+			<ImageURL>https://vignette.wikia.nocookie.net/es.pokemon/images/5/5d/Pikachu_%28anime_DP%29.png/revision/latest?cb=20120906045146</ImageURL>
+		</IconType>
+		<IconType>
+			<Name>Animal</Name>
+			<ImageURL>https://vignette.wikia.nocookie.net/es.pokemon/images/5/5d/Pikachu_%28anime_DP%29.png/revision/latest?cb=20120906045146</ImageURL>
+		</IconType>
+	</IconTypes>
+	<Data>
+		<POI>
+			<Name>Unico Restobar</Name>
+			<Info>Soy un restobar re loco frente a la uni.</Info>
+			<IconType>Planta</IconType>
+			<Location>
+				<Lat>-38.702474</Lat>
+				<Lon>-62.270346</Lon>
+			</Location>
+			<DistanceLevel>
+				<Distance>30</Distance>
+				<IconType>Animal</IconType>
+				<Info>Estoy a menos de 30m</Info>
+			</DistanceLevel>
+		</POI>
+	</Data>
+</Documment>
+
+
+
+
+
+<Datos>
+    <PuntoDeInteres>
+        <Nombre>Unico Restobar</Nombre>
+        <CoordenadaGPS>
+            <Latitud>-38.702474</Latitud>
+            <Longitud>-62.270346</Longitud>
+        </CoordenadaGPS>
+        <Categoria>Planta</Categoria>
+        <Descripcion>Soy un restobar re loco frente a la uni</Descripcion>
+        <ComoSoy>Soy gordita y rosada</ComoSoy>
+        <ComoMeRelaciono>Me gusta la humedad</ComoMeRelaciono>
+        <ComoMeAdapto>Muy bien me adapto</ComoMeAdapto>
+        <SabiasQue>Me gusta el sol?</SabiasQue>
+        <Fotos>
+            <Foto>esta va a ser la ruta de una foto</Foto>
+            <Foto>asdasd</Foto>
+        </Fotos>
+        <Videos>
+            <Video>este sera el link del video</Video>
+        </Videos>
+        <Links>
+            <Link>esto sera un link a algo</Link>
+        </Links>
+        <Juego>
+            <Pregunta>Por que me pongo rosa?</Pregunta>
+            <Opciones>
+                <Opcion>Porque si</Opcion>
+                <Opcion>Tengo Pigmentos</Opcion>
+                <Opcion>No lo se</Opcion>
+            </Opciones>
+            <Respuesta>Tengo Pigmentos</Respuesta>
+        </Juego>
+    </PuntoDeInteres>
+    <PuntoDeInteres>
+        <Nombre>Entrada del Parque</Nombre>
+        <CoordenadaGPS>
+            <Latitud>-38.701285</Latitud>
+            <Longitud>-62.271132</Longitud>
+        </CoordenadaGPS>
+        <Categoria>Planta</Categoria>
+        <Descripcion>Soy la descripcion de prueba</Descripcion>
+        <ComoSoy>Soy gordita y rosada</ComoSoy>
+        <ComoMeRelaciono>Me gusta la humedad</ComoMeRelaciono>
+        <ComoMeAdapto>Muy bien me adapto</ComoMeAdapto>
+        <SabiasQue>Me gusta el sol?</SabiasQue>
+        <Fotos>
+            <Foto>esta va a ser la ruta de una foto</Foto>
+            <Foto>asdasd</Foto>
+        </Fotos>
+        <Videos>
+            <Video>este sera el link del video</Video>
+        </Videos>
+        <Links>
+            <Link>esto sera un link a algo</Link>
+        </Links>
+        <Juego>
+            <Pregunta>Por que me pongo rosa?</Pregunta>
+            <Opciones>
+                <Opcion>Porque si</Opcion>
+                <Opcion>Tengo Pigmentos</Opcion>
+                <Opcion>No lo se</Opcion>
+            </Opciones>
+            <Respuesta>Tengo Pigmentos</Respuesta>
+        </Juego>
+    </PuntoDeInteres>
+    <PuntoDeInteres>
+        <Nombre>Esquina Primera Junta y Panama</Nombre>
+        <CoordenadaGPS>
+            <Latitud>-38.702817</Latitud>
+            <Longitud>-62.272409</Longitud>
+        </CoordenadaGPS>
+        <Categoria>Animal</Categoria>
+        <Descripcion>Estoy en la esquina</Descripcion>
+        <ComoSoy>Soy gordita y rosada</ComoSoy>
+        <ComoMeRelaciono>Me gusta la humedad</ComoMeRelaciono>
+        <ComoMeAdapto>Muy bien me adapto</ComoMeAdapto>
+        <SabiasQue>Me gusta el sol?</SabiasQue>
+        <Fotos>
+            <Foto>esta va a ser la ruta de una foto</Foto>
+            <Foto>asdasd</Foto>
+        </Fotos>
+        <Videos>
+            <Video>este sera el link del video</Video>
+        </Videos>
+        <Links>
+            <Link>esto sera un link a algo</Link>
+        </Links>
+        <Juego>
+            <Pregunta>Por que me pongo rosa?</Pregunta>
+            <Opciones>
+                <Opcion>Porque si</Opcion>
+                <Opcion>Tengo Pigmentos</Opcion>
+                <Opcion>No lo se</Opcion>
+            </Opciones>
+            <Respuesta>Tengo Pigmentos</Respuesta>
+        </Juego>
+    </PuntoDeInteres>
+</Datos>

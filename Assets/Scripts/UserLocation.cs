@@ -2,15 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UserLocation : MonoBehaviour {
+public class UserLocation : Location {
 
-	public static double lat;
-	public static double lon;
+	public static UserLocation singleton;
 
 	// Use this for initialization
-	void Start () {
-		UserLocation.lat = -38.700103;
-		UserLocation.lon = -62.268613;
+	public UserLocation () {
+		if (singleton == null)
+			singleton = this;
+		lat = -38.700103;
+		lon = -62.268613;
+	}
+
+	public void UpdateLocation(){
+		lat=Input.location.lastData.latitude;
+		lon=Input.location.lastData.longitude;
 	}
 	
 

@@ -777,6 +777,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1388705047}
   - component: {fileID: 1388705046}
+  - component: {fileID: 1388705048}
   m_Layer: 0
   m_Name: DataManager
   m_TagString: Untagged
@@ -795,15 +796,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04ea5a8aef7cab7409ea3ab6de60d915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xmlText: "<?xml version=\"1.0\"?> <Documment> \t<IconTypes> \t\t<IconType> \t\t\t<Name>Planta</Name>
-    \t\t\t<ImageURL>https://vignette.wikia.nocookie.net/es.pokemon/images/5/5d/Pikachu_%28anime_DP%29.png/revision/latest?cb=20120906045146</ImageURL>
-    \t\t</IconType> \t\t<IconType> \t\t\t<Name>Animal</Name> \t\t\t<ImageURL>https://vignette.wikia.nocookie.net/es.pokemon/images/5/5d/Pikachu_%28anime_DP%29.png/revision/latest?cb=20120906045146</ImageURL>
-    \t\t</IconType> \t</IconTypes> \t<Data> \t\t<POI> \t\t\t<Name>Unico Restobar</Name>
-    \t\t\t<Info>Soy un restobar re loco frente a la uni.</Info> \t\t\t<IconType>Planta</IconType>
-    \t\t\t<Location> \t\t\t\t<Lat>-38.702474</Lat> \t\t\t\t<Lon>-62.270346</Lon> \t\t\t</Location>
-    \t\t\t<DistanceLevel> \t\t\t\t<Distance>30</Distance> \t\t\t\t<IconType>Animal</IconType>
-    \t\t\t\t<Info>Estoy a menos de 30m</Info> \t\t\t</DistanceLevel> \t\t</POI> \t</Data>
-    </Documment>"
   poiPrefab: {fileID: 1180542157048452, guid: 3fb06ec4e3cf4e34b9454984047273c1, type: 2}
 --- !u!4 &1388705047
 Transform:
@@ -818,6 +810,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1388705048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1388705045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0337d5f663005bc458fd1339ea962e49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xmlText: "<?xml version=\"1.0\"?> <Documment> \t<IconTypes> \t\t<IconType> \t\t\t<Name>Planta</Name>
+    \t\t\t<ImageURL>https://vignette.wikia.nocookie.net/es.pokemon/images/5/5d/Pikachu_%28anime_DP%29.png/revision/latest?cb=20120906045146</ImageURL>
+    \t\t</IconType> \t\t<IconType> \t\t\t<Name>Animal</Name> \t\t\t<ImageURL>https://vignette.wikia.nocookie.net/es.pokemon/images/5/5d/Pikachu_%28anime_DP%29.png/revision/latest?cb=20120906045146</ImageURL>
+    \t\t</IconType> \t</IconTypes> \t<Data> \t\t<POI> \t\t\t<Name>Unico Restobar</Name>
+    \t\t\t<Info>Soy un restobar re loco frente a la uni.</Info> \t\t\t<IconType>Planta</IconType>
+    \t\t\t<Location> \t\t\t\t<Lat>-38.702474</Lat> \t\t\t\t<Lon>-62.270346</Lon> \t\t\t</Location>
+    \t\t\t<DistanceLevel> \t\t\t\t<Distance>30</Distance> \t\t\t\t<IconType>Animal</IconType>
+    \t\t\t\t<Info>Estoy a menos de 30m</Info> \t\t\t</DistanceLevel> \t\t</POI> \t</Data>
+    </Documment>"
+  cantIconTypes: 0
 --- !u!1 &1564818591
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,7 +843,7 @@ GameObject:
   - component: {fileID: 1564818592}
   - component: {fileID: 1564818595}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: User
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -904,7 +917,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1564818591}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0598ce613192d1944a9a47b7b847bf03, type: 3}
+  m_Script: {fileID: 11500000, guid: d1c75111e084ed64382657a7a9d2c2c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1761275296
