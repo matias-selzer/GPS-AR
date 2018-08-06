@@ -776,10 +776,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1388705047}
-  - component: {fileID: 1388705046}
   - component: {fileID: 1388705048}
+  - component: {fileID: 1388705046}
   m_Layer: 0
-  m_Name: DataManager
+  m_Name: Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -793,7 +793,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1388705045}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04ea5a8aef7cab7409ea3ab6de60d915, type: 3}
+  m_Script: {fileID: 11500000, guid: 2030f47a5fc84994f89b174c6b71067e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   poiPrefab: {fileID: 1180542157048452, guid: 3fb06ec4e3cf4e34b9454984047273c1, type: 2}
@@ -842,6 +842,7 @@ GameObject:
   - component: {fileID: 1564818593}
   - component: {fileID: 1564818592}
   - component: {fileID: 1564818595}
+  - component: {fileID: 1564818596}
   m_Layer: 0
   m_Name: User
   m_TagString: Untagged
@@ -918,6 +919,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d1c75111e084ed64382657a7a9d2c2c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1564818596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1564818591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa3cafdc6117db46b73f36204b18efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1761275296
@@ -1175,8 +1187,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 657c5370a1d26c54aaafb1faf1bd12fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gyroInitialRotation: {x: 0, y: 0, z: 0, w: 0}
   mensajeError: {fileID: 0}
   consolaLoca: {fileID: 0}
+  defasaje: 0
+  oldGrados: 0
+  usarCompass: 0
 --- !u!114 &2050376678
 MonoBehaviour:
   m_ObjectHideFlags: 0
