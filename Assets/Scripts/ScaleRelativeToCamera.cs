@@ -1,16 +1,9 @@
-﻿/// ScaleRelativeToCamera.cs
-/// Hayden Scott-Baron (Dock) - http://starfruitgames.com
-/// 19 Oct 2012
-/// 
-/// Scales object relative to camera. 
-/// Useful for GUI and items that appear in the world space. 
-
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class ScaleRelativeToCamera : MonoBehaviour 
 {
-	public Camera cam; 
+	private Camera cam; 
 	public float objectScale = 1.0f; 
 	private Vector3 initialScale; 
 
@@ -24,7 +17,7 @@ public class ScaleRelativeToCamera : MonoBehaviour
 		if (cam == null)
 			cam = Camera.main; 
 
-		cam =GameObject.Find ("Camera").GetComponent<Camera>();
+		cam =GameObject.Find ("User").GetComponent<Camera>();
 	}
 
 	// scale object relative to distance from camera plane

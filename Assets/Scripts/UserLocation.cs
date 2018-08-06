@@ -15,8 +15,10 @@ public class UserLocation : Location {
 	}
 
 	public void UpdateLocation(){
-		lat=Input.location.lastData.latitude;
-		lon=Input.location.lastData.longitude;
+		#if UNITY_ANDROID
+			lat=Input.location.lastData.latitude;
+			lon=Input.location.lastData.longitude;
+		#endif
 	}
 	
 

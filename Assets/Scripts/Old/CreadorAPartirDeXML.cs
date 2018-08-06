@@ -39,7 +39,7 @@ public class CreadorAPartirDeXML : MonoBehaviour {
 				GameObject nuevoPunto = Instantiate (objetoPrefab) as GameObject;
 				objetos.Add( nuevoPunto);
 				o++;
-				nuevoPunto.GetComponent<SeguirCamara> ().target = persona;
+				//nuevoPunto.GetComponent<LookAtCamera> ().target = persona;
 				nuevoPunto.GetComponent<ControladorObjetoEnElMundo> ().menu = menu;
 				nuevoPunto.GetComponent<ControladorObjetoEnElMundo> ().panelInfo = menu.transform.Find ("PanelBreveDescripcion").gameObject;
 				//asigno el nombre

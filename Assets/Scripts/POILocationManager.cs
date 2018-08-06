@@ -23,7 +23,7 @@ public class POILocationManager {
 		if (poiLocation.lon < userLocation.lon)
 			distX *= -1.0;
 
-		newPos= new Vector3 (((float)(distX*1000)), 0, ((float)(distY*1000)));
+		newPos= new Vector3 (((float)(distX*1000)), 3, ((float)(distY*1000)));
 
 		return newPos;
 	}
