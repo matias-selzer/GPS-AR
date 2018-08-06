@@ -41,6 +41,7 @@ public class Manager : MonoBehaviour {
 		for (int i = 0; i < POIs.Count; i++) {
 			GameObject newPoi = Instantiate (poiPrefab) as GameObject;
 			POIs[i].graphicPOI=newPoi.GetComponent<GraphicPOI>();
+			POIs [i].graphicPOI.infoText = POIs [i].info;
 		}
 	}
 
@@ -51,7 +52,8 @@ public class Manager : MonoBehaviour {
 
 		for (int i = 0; i < POIs.Count; i++) {
 			Vector3 newPosition=poiLocationManager.UpdatePosition (userLocation, POIs [i].location);
-			POIs [i].UpdatePosition (newPosition);
+			double distance = poiLocationManager.CalculateDistanceKM (userLocation, POIs [i].location);
+			POIs [i].UpdatePosition (newPosition,distance);
 		}
 	}
 

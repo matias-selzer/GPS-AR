@@ -14,7 +14,7 @@ public class POI {
 		graphicPOI.UpdateIcon (tex);
 	}
 
-	public void UpdatePosition(Vector3 newPosition){
-		graphicPOI.UpdatePosition (newPosition);
+	public void UpdatePosition(Vector3 newPosition, double distance){
+		graphicPOI.UpdatePosition (newPosition, distance);
 	}
 }

@@ -135,8 +135,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: togglearPanelBreveDescripcion
+      - m_Target: {fileID: 114073441661628680}
+        m_MethodName: showInformation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -161,6 +161,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 114591547921283138}
   label: {fileID: 114205007665014242}
+  panelInfo: {fileID: 0}
+  infoText: 
 --- !u!114 &114205007665014242
 MonoBehaviour:
   m_ObjectHideFlags: 1
