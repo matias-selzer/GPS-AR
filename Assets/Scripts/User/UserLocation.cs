@@ -15,12 +15,14 @@ public class UserLocation : Location {
 	}
 
 	public void UpdateLocation(){
-		#if UNITY_ANDROID
-			lat=Input.location.lastData.latitude;
-			lon=Input.location.lastData.longitude;
-		#endif
-	}
-	
+        #if UNITY_EDITOR
+                //Debug.Log("editor");
+        #elif UNITY_ANDROID
+			    lat=Input.location.lastData.latitude;
+			    lon=Input.location.lastData.longitude;
+        #endif
+    }
+
 
 
 }

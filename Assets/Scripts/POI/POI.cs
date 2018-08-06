@@ -15,6 +15,6 @@ public class POI {
 	}
 
 	public void UpdatePosition(Vector3 newPosition, double distance){
-		graphicPOI.UpdatePosition (newPosition, distance);
+        graphicPOI.UpdatePosition (newPosition, distance);
 	}
 }

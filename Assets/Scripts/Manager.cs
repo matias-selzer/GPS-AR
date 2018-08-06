@@ -49,11 +49,10 @@ public class Manager : MonoBehaviour {
 	public void UpdateLocations(){
 		UserLocation.singleton.UpdateLocation ();
 		Location userLocation = UserLocation.singleton;
-
 		for (int i = 0; i < POIs.Count; i++) {
 			Vector3 newPosition=poiLocationManager.UpdatePosition (userLocation, POIs [i].location);
 			double distance = poiLocationManager.CalculateDistanceKM (userLocation, POIs [i].location);
-			POIs [i].UpdatePosition (newPosition,distance);
+            POIs [i].UpdatePosition (newPosition,distance);
 		}
 	}
 

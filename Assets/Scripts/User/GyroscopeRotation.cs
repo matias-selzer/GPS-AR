@@ -26,8 +26,10 @@ public class GyroscopeRotation : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		#if UNITY_ANDROID
-		actualizarDatosGyro ();
+        #if UNITY_EDITOR
+        //Debug.Log("editor");
+        #elif UNITY_ANDROID
+        actualizarDatosGyro ();
 		#endif
 	}
 		

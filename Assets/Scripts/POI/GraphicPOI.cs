@@ -24,7 +24,7 @@ public class GraphicPOI : MonoBehaviour {
 
 	public void UpdatePosition(Vector3 newPosition, double distance){
 		transform.position = newPosition;
-		label.text = (int)(distance*1000) + " m";
+        label.text = (int)(distance) + " m";
 	}
 
 	public void showInformation(){
