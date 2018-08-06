@@ -23,6 +23,27 @@
 				<Distance>30</Distance>
 				<IconType>Animal</IconType>
 				<Info>Estoy a menos de 30m</Info>
+				<Categories>
+					<Category>
+						<IconType>Planta</IconType>
+						<TextContent>Sooy un cangrejo</TextContent>
+						<ImageContent>
+							<ImageURL>url</ImageURL>
+							<Caption>soy un caption</Caption>					
+						</ImageContent>
+						<ImageContent>url2</ImageContent>
+					</Category>
+					<Category>
+						<IconType>Planta</IconType>
+						<TextContent>Sooy un cangrejo</TextContent>
+						<ImageContent>
+							<ImageURL>url</ImageURL>
+							<Caption>soy un caption</Caption>
+							<Link>url de un link que te lo abra en el navegador</Link>
+						</ImageContent>
+						<ImageContent>url2</ImageContent>
+					</Category>
+				</Categories>
 			</DistanceLevel>
 		</POI>
 	</Data>

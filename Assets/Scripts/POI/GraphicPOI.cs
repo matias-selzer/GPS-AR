@@ -16,6 +16,7 @@ public class GraphicPOI : MonoBehaviour {
 
 	void Start(){
 		panelInfo = GameObject.Find ("PanelInfo");
+		transform.GetChild(0).GetComponent<Canvas> ().worldCamera = GameObject.Find ("User").GetComponent<Camera> ();
 	}
 
 	public void UpdateIcon(Texture2D tex){
