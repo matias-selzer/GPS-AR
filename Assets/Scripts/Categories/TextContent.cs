@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class TextContent : Content {
 
-	public string textContent;
 
 	public TextContent(string text){
-		textContent = text;
+		rawContent = text;
 	}
 }

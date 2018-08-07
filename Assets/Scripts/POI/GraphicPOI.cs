@@ -30,13 +30,16 @@ public class GraphicPOI : MonoBehaviour {
 	}
 
 	public void showInformation(){
-		panelInfo.info.text = myPOI.info;
+		//panelInfo.info.text = myPOI.info;
 		panelInfo.title.text = myPOI.name;
 
 		foreach (Category cat in myPOI.categories) {
 			Texture2D tex = IconsRepository.iconTypes [cat.iconType];
 			panelInfo.InstantiateNewCategoryButton (tex);
+			panelInfo.InstantiateContent (cat.contents);
 		}
+
+
 
 		panelInfo.gameObject.SetActive (true);
 	}

@@ -40,6 +40,9 @@
 					<Content>
 						<TextContent>Soy un restobar re loco frente a la uni.</TextContent>
 					</Content>
+					<Content>
+						<TextContent>Soy el segundo content de texto.</TextContent>
+					</Content>
 				</Category>
 				<Category>
 					<IconType>Pictures</IconType>

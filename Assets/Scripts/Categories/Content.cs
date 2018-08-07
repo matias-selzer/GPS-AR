@@ -4,5 +4,6 @@ using UnityEngine;
 
 public abstract class Content  {
 
+	public string rawContent;
 
 }
