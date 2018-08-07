@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class IconsRepository  {
 
-	public Dictionary<string,Texture2D> iconTypes;
+	public static Dictionary<string,Texture2D> iconTypes;
 
 	public IconsRepository(){
-		iconTypes = new Dictionary<string,Texture2D> ();
+		IconsRepository.iconTypes = new Dictionary<string,Texture2D> ();
 	}
 
 }

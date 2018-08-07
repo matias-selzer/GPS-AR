@@ -6,14 +6,14 @@ using UnityEngine.UI;
 public class PanelInfoManager : MonoBehaviour {
 
 	public Text info;
+	public Text title;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	public GameObject categoryButtonPrefab;
+	public GameObject categoriesContentPanel;
+
+	public void InstantiateNewCategoryButton(Texture2D tex){
+		GameObject newButton = Instantiate (categoryButtonPrefab) as GameObject;
+		newButton.GetComponent<Image>().sprite = Sprite.Create (tex, new Rect (0.0f, 0.0f, tex.width, tex.height), new Vector2 (0.5f, 0.5f));
+		newButton.transform.parent = categoriesContentPanel.transform;
 	}
 }

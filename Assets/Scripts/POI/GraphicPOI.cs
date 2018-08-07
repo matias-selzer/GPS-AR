@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class GraphicPOI : MonoBehaviour {
 
 	public Image icon;
-	public Text label;
+	public Text distanceLabel;
 
 	[HideInInspector]
 	public PanelInfoManager panelInfo;
 
 	[HideInInspector]
-	public string infoText;
+	public POI myPOI;
+
 
 	void Start(){
 		panelInfo = Resources.FindObjectsOfTypeAll<PanelInfoManager>()[0];
@@ -25,11 +26,18 @@ public class GraphicPOI : MonoBehaviour {
 
 	public void UpdatePosition(Vector3 newPosition, double distance){
 		transform.position = newPosition;
-        label.text = (int)(distance*1000) + " m";
+        distanceLabel.text = (int)(distance*1000) + " m";
 	}
 
 	public void showInformation(){
-		panelInfo.info.text = infoText;
+		panelInfo.info.text = myPOI.info;
+		panelInfo.title.text = myPOI.name;
+
+		foreach (Category cat in myPOI.categories) {
+			Texture2D tex = IconsRepository.iconTypes [cat.iconType];
+			panelInfo.InstantiateNewCategoryButton (tex);
+		}
+
 		panelInfo.gameObject.SetActive (true);
 	}
 }

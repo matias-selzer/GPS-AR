@@ -19,7 +19,7 @@ public class Manager : MonoBehaviour {
 		POIs = new List<POI> ();
 		dataLoader = GetComponent<DataLoader> ();
 		poiLocationManager = new POILocationManager ();
-		dataLoader.LoadData (iconsRepository.iconTypes,POIs);	
+		dataLoader.LoadData (IconsRepository.iconTypes,POIs);	
 		InstantiatePOIs ();
 		InvokeRepeating ("UpdateIconTypes", 0, 0.1f);
 		InvokeRepeating ("UpdateLocations", 0, 1f);
@@ -27,9 +27,9 @@ public class Manager : MonoBehaviour {
 
 
 	void UpdateIconTypes(){
-		if (iconsRepository.iconTypes.Count >= ((XMLEditorDataLoader)dataLoader).cantIconTypes) {
+		if (IconsRepository.iconTypes.Count >= ((XMLEditorDataLoader)dataLoader).cantIconTypes) {
 			for (int i = 0; i < POIs.Count; i++) {
-				Texture2D tex = iconsRepository.iconTypes [POIs [i].iconType];
+				Texture2D tex = IconsRepository.iconTypes [POIs [i].iconType];
 				POIs [i].UpdateIcon (tex);
 			}
 			CancelInvoke ("UpdateIconTypes");
@@ -41,7 +41,7 @@ public class Manager : MonoBehaviour {
 		for (int i = 0; i < POIs.Count; i++) {
 			GameObject newPoi = Instantiate (poiPrefab) as GameObject;
 			POIs[i].graphicPOI=newPoi.GetComponent<GraphicPOI>();
-			POIs [i].graphicPOI.infoText = POIs [i].info;
+			POIs [i].graphicPOI.myPOI = POIs [i];
 		}
 	}
 

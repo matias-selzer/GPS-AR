@@ -9,6 +9,7 @@ public class POI {
 	public string iconType;
 	public POILocation location;
 	public GraphicPOI graphicPOI;
+	public List<Category> categories;
 
 	public void UpdateIcon(Texture2D tex){
 		graphicPOI.UpdateIcon (tex);

@@ -24,9 +24,9 @@ public class XMLEditorDataLoader : DataLoader {
 			foreach (XmlNode nameNode in poiNode.SelectNodes("Name")) {
 				newPoi.name = nameNode.InnerText;
 			}
-			foreach (XmlNode infoNode in poiNode.SelectNodes("Info")) {
+			/*foreach (XmlNode infoNode in poiNode.SelectNodes("Info")) {
 				newPoi.info = infoNode.InnerText;
-			}
+			}*/
 			foreach (XmlNode iconTypeNode in poiNode.SelectNodes("IconType")) {
 				newPoi.iconType = iconTypeNode.InnerText;
 			}
@@ -43,6 +43,23 @@ public class XMLEditorDataLoader : DataLoader {
 					newPoi.location.lon = lon;
 				}
 			}
+			List<Category> categories = new List<Category> ();
+			foreach (XmlNode categoriesNode in poiNode.SelectNodes("Categories")) {
+				foreach (XmlNode categoryNode in categoriesNode.SelectNodes("Category")) {
+					Category newCategory = new Category ();
+					foreach (XmlNode iconTypeNode in categoryNode.SelectNodes("IconType")) {
+						newCategory.iconType = iconTypeNode.InnerText;
+					}
+					foreach (XmlNode contentNode in categoryNode.SelectNodes("Content")) {
+						foreach (XmlNode textContentNode in contentNode.SelectNodes("TextContent")) {
+							newCategory.contents.Add (new TextContent (textContentNode.InnerText));
+						}
+					}
+					categories.Add (newCategory);
+				}
+			}
+			newPoi.categories = categories;
+
 			pois.Add (newPoi);
 		}
 	}
