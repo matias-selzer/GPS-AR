@@ -9,13 +9,13 @@ public class GraphicPOI : MonoBehaviour {
 	public Text label;
 
 	[HideInInspector]
-	public GameObject panelInfo;
+	public PanelInfoManager panelInfo;
 
 	[HideInInspector]
 	public string infoText;
 
 	void Start(){
-		panelInfo = GameObject.Find ("PanelInfo");
+		panelInfo = Resources.FindObjectsOfTypeAll<PanelInfoManager>()[0];
 		transform.GetChild(0).GetComponent<Canvas> ().worldCamera = GameObject.Find ("User").GetComponent<Camera> ();
 	}
 
@@ -25,12 +25,11 @@ public class GraphicPOI : MonoBehaviour {
 
 	public void UpdatePosition(Vector3 newPosition, double distance){
 		transform.position = newPosition;
-        label.text = (int)(distance) + " m";
+        label.text = (int)(distance*1000) + " m";
 	}
 
 	public void showInformation(){
-		Debug.Log ("hola");
-		panelInfo.transform.Find ("Text").GetComponent<Text> ().text = infoText;
-		panelInfo.SetActive (true);
+		panelInfo.info.text = infoText;
+		panelInfo.gameObject.SetActive (true);
 	}
 }
