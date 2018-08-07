@@ -223,7 +223,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 560007838}
   m_Direction: 0
   m_Value: 1
-  m_Size: 0.9999994
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -629,10 +629,12 @@ MonoBehaviour:
   title: {fileID: 1223049201}
   categoryButtonPrefab: {fileID: 1710619822789840, guid: 2cb3385f9debb5c42a96b1fd7bfeebe9,
     type: 2}
-  categoriesContentPanel: {fileID: 1938513472}
-  textContentPanelPrefab: {fileID: 1285505156081332, guid: 029a3f27b86618e4ba653a8e41061689,
+  categoriesContainer: {fileID: 1938513472}
+  textContentPrefab: {fileID: 1285505156081332, guid: 029a3f27b86618e4ba653a8e41061689,
     type: 2}
-  scrollViewContentPrefab: {fileID: 1451579235845404, guid: c6180dc2877d0ab43a3f71c2f6e770f6,
+  imageContentPrefab: {fileID: 1788933378378602, guid: fa1964fe229ed5f489f839bbe7ffec5b,
+    type: 2}
+  contentContainerPrefab: {fileID: 1451579235845404, guid: c6180dc2877d0ab43a3f71c2f6e770f6,
     type: 2}
 --- !u!1 &560007837
 GameObject:
@@ -664,7 +666,7 @@ RectTransform:
   m_Father: {fileID: 6521847}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.00000059604645, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -733,7 +735,7 @@ RectTransform:
   m_Father: {fileID: 1060503653}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.000000059604645}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -1231,11 +1233,74 @@ MonoBehaviour:
     \t\t\t\t\t<IconType>Information</IconType> \t\t\t\t\t<Content> \t\t\t\t\t\t<TextContent>Soy
     un restobar re loco frente a la uni.</TextContent> \t\t\t\t\t</Content> \t\t\t\t\t<Content>
     \t\t\t\t\t\t<TextContent>Soy el segundo content de texto.</TextContent> \t\t\t\t\t</Content>
-    \t\t\t\t</Category> \t\t\t\t<Category> \t\t\t\t\t<IconType>Pictures</IconType>
-    \t\t\t\t\t<ImageContent> \t\t\t\t\t\t<ImageURL>http://static.t13.cl/images/sizes/1200x675/1510680295-pokemon-yo-te-elijo.jpg</ImageURL>
-    \t\t\t\t\t\t<Caption>Imagen de pokemon</Caption>\t\t\t\t\t \t\t\t\t\t</ImageContent>
-    \t\t\t\t\t<ImageContent>http://f.rpp-noticias.io/2018/07/03/043204_639694.png</ImageContent>
-    \t\t\t\t</Category> \t\t\t</Categories> \t\t</POI> \t</Data> </Documment>"
+    \t\t\t\t\t<Content> \t\t\t\t\t\t<TextContent>Esta categor\xEDa solo tiene texto.</TextContent>
+    \t\t\t\t\t</Content> \t\t\t\t\t<Content> \t\t\t\t\t\t<TextContent>Soy un texto
+    muuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuy
+    muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy
+    muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy
+    muy muy largo!</TextContent> \t\t\t\t\t</Content> \t\t\t\t</Category> \t\t\t\t<Category>
+    \t\t\t\t\t<IconType>Pictures</IconType> \t\t\t\t\t<Content> \t\t\t\t\t\t<ImageContent>
+    \t\t\t\t\t\t\t<ImageURL>http://static.t13.cl/images/sizes/1200x675/1510680295-pokemon-yo-te-elijo.jpg</ImageURL>
+    \t\t\t\t\t\t\t<Caption>Categor\xEDa con solo im\xE1genes</Caption>\t\t\t\t\t \t\t\t\t\t\t</ImageContent>
+    \t\t\t\t\t</Content> \t\t\t\t\t<Content> \t\t\t\t\t\t<ImageContent> \t\t\t\t\t\t\t<ImageURL>https://cdn.bulbagarden.net/upload/thumb/3/3b/Cap_Pikachu_SM.png/1200px-Cap_Pikachu_SM.png</ImageURL>
+    \t\t\t\t\t\t\t<Caption>Soy una imagen en png sin fondo.</Caption>\t\t\t\t\t \t\t\t\t\t\t</ImageContent>
+    \t\t\t\t\t</Content> \t\t\t\t\t<Content> \t\t\t\t\t\t<ImageContent> \t\t\t\t\t\t\t<ImageURL>https://static.zerochan.net/Pikachu.full.933229.jpg</ImageURL>\t
+    \t\t\t\t\t\t\t<Caption>En teor\xEDa soy una imagen cuadrada.</Caption>\t\t\t\t\t\t\t
+    \t\t\t\t\t\t</ImageContent> \t\t\t\t\t</Content> \t\t\t\t\t<Content> \t\t\t\t\t\t<ImageContent>
+    \t\t\t\t\t\t\t<ImageURL>http://f.rpp-noticias.io/2018/07/03/043204_639694.png</ImageURL>
+    \t\t\t\t\t\t\t<Caption>La imagen siguiente no tiene caption.</Caption>\t\t\t\t\t
+    \t\t\t\t\t\t</ImageContent> \t\t\t\t\t</Content> \t\t\t\t\t<Content> \t\t\t\t\t\t<ImageContent>
+    \t\t\t\t\t\t\t<ImageURL>http://static.echonest.com/InfiniteGangnamStyle/psy.png</ImageURL>\t\t\t\t\t
+    \t\t\t\t\t\t</ImageContent> \t\t\t\t\t</Content> \t\t\t\t</Category> \t\t\t\t<Category>
+    \t\t\t\t\t<IconType>Video</IconType> \t\t\t\t\t<Content> \t\t\t\t\t\t<TextContent>Esta
+    categor\xEDa tiene mezcla de texto con im\xE1genes. Veamos un texto ni muy cortito
+    ni muy tan largo. Todo se reduce a la velocidad de la luz cuando gira por el infinito
+    del universo cu\xE1ntico, mientras el espacio-tiempo se deforma a una velocidad
+    no tan constante que puede apreciarse con un telescopio cu\xE1ntico.</TextContent>
+    \t\t\t\t\t</Content> \t\t\t\t\t<Content> \t\t\t\t\t\t<ImageContent> \t\t\t\t\t\t\t<ImageURL>http://www.i2clipart.com/cliparts/5/8/b/0/clipart-optical-illusion-1-58b0.png</ImageURL>
+    \t\t\t\t\t\t\t<Caption>Soy una imagen muy peque\xF1a.</Caption>\t\t\t\t\t \t\t\t\t\t\t</ImageContent>
+    \t\t\t\t\t</Content> \t\t\t\t\t<Content> \t\t\t\t\t\t<TextContent>Solo queda una
+    imagen m\xE1s.</TextContent> \t\t\t\t\t</Content> \t\t\t\t\t<Content> \t\t\t\t\t\t<ImageContent>
+    \t\t\t\t\t\t\t<ImageURL>https://i.amz.mshcdn.com/vHrZnBxjo6ig_9vSaZL8QorZU3Q=/950x534/filters:quality(90)/2012%2F12%2F04%2F4e%2F5awesomeopt.cqt.jpg</ImageURL>
+    \t\t\t\t\t\t\t<Caption>Precauci\xF3n, puede causar convulsiones.</Caption>\t\t\t\t\t
+    \t\t\t\t\t\t</ImageContent> \t\t\t\t\t</Content> \t\t\t\t</Category> \t\t\t\t<Category>
+    \t\t\t\t\t<IconType>Information</IconType> \t\t\t\t\t<Content> \t\t\t\t\t\t<TextContent>Soy
+    un restobar re loco frente a la uni.</TextContent> \t\t\t\t\t</Content> \t\t\t\t\t<Content>
+    \t\t\t\t\t\t<TextContent>Soy el segundo content de texto.</TextContent> \t\t\t\t\t</Content>
+    \t\t\t\t\t<Content> \t\t\t\t\t\t<TextContent>Esta categor\xEDa solo tiene texto.</TextContent>
+    \t\t\t\t\t</Content> \t\t\t\t\t<Content> \t\t\t\t\t\t<TextContent>Soy un texto
+    muuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuy
+    muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy
+    muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy
+    muy muy largo!</TextContent> \t\t\t\t\t</Content> \t\t\t\t</Category> \t\t\t\t<Category>
+    \t\t\t\t\t<IconType>Information</IconType> \t\t\t\t\t<Content> \t\t\t\t\t\t<TextContent>Soy
+    un restobar re loco frente a la uni.</TextContent> \t\t\t\t\t</Content> \t\t\t\t\t<Content>
+    \t\t\t\t\t\t<TextContent>Soy el segundo content de texto.</TextContent> \t\t\t\t\t</Content>
+    \t\t\t\t\t<Content> \t\t\t\t\t\t<TextContent>Esta categor\xEDa solo tiene texto.</TextContent>
+    \t\t\t\t\t</Content> \t\t\t\t\t<Content> \t\t\t\t\t\t<TextContent>Soy un texto
+    muuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuy
+    muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy
+    muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy
+    muy muy largo!</TextContent> \t\t\t\t\t</Content> \t\t\t\t</Category> \t\t\t\t<Category>
+    \t\t\t\t\t<IconType>Information</IconType> \t\t\t\t\t<Content> \t\t\t\t\t\t<TextContent>Soy
+    un restobar re loco frente a la uni.</TextContent> \t\t\t\t\t</Content> \t\t\t\t\t<Content>
+    \t\t\t\t\t\t<TextContent>Soy el segundo content de texto.</TextContent> \t\t\t\t\t</Content>
+    \t\t\t\t\t<Content> \t\t\t\t\t\t<TextContent>Esta categor\xEDa solo tiene texto.</TextContent>
+    \t\t\t\t\t</Content> \t\t\t\t\t<Content> \t\t\t\t\t\t<TextContent>Soy un texto
+    muuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuy
+    muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy
+    muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy
+    muy muy largo!</TextContent> \t\t\t\t\t</Content> \t\t\t\t</Category> \t\t\t\t<Category>
+    \t\t\t\t\t<IconType>Information</IconType> \t\t\t\t\t<Content> \t\t\t\t\t\t<TextContent>Soy
+    un restobar re loco frente a la uni.</TextContent> \t\t\t\t\t</Content> \t\t\t\t\t<Content>
+    \t\t\t\t\t\t<TextContent>Soy el segundo content de texto.</TextContent> \t\t\t\t\t</Content>
+    \t\t\t\t\t<Content> \t\t\t\t\t\t<TextContent>Esta categor\xEDa solo tiene texto.</TextContent>
+    \t\t\t\t\t</Content> \t\t\t\t\t<Content> \t\t\t\t\t\t<TextContent>Soy un texto
+    muuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuy
+    muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy
+    muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy
+    muy muy largo!</TextContent> \t\t\t\t\t</Content> \t\t\t\t</Category> \t\t\t</Categories>
+    \t\t</POI> \t</Data> </Documment>   "
   cantIconTypes: 0
 --- !u!1 &1402333042
 GameObject:
@@ -1312,7 +1377,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 579888747}
   m_HandleRect: {fileID: 579888746}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1651,7 +1716,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000024342908, y: -0.00000818288}
+  m_AnchoredPosition: {x: -0.000024342908, y: 0.000022203538}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1938513474

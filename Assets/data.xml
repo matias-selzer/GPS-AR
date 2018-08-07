@@ -43,17 +43,124 @@
 					<Content>
 						<TextContent>Soy el segundo content de texto.</TextContent>
 					</Content>
+					<Content>
+						<TextContent>Esta categoría solo tiene texto.</TextContent>
+					</Content>
+					<Content>
+						<TextContent>Soy un texto muuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy largo!</TextContent>
+					</Content>
 				</Category>
 				<Category>
 					<IconType>Pictures</IconType>
 					<Content>
 						<ImageContent>
 							<ImageURL>http://static.t13.cl/images/sizes/1200x675/1510680295-pokemon-yo-te-elijo.jpg</ImageURL>
-							<Caption>Imagen de pokemon</Caption>					
+							<Caption>Categoría con solo imágenes</Caption>					
 						</ImageContent>
 					</Content>
 					<Content>
-						<ImageContent>http://f.rpp-noticias.io/2018/07/03/043204_639694.png</ImageContent>
+						<ImageContent>
+							<ImageURL>https://cdn.bulbagarden.net/upload/thumb/3/3b/Cap_Pikachu_SM.png/1200px-Cap_Pikachu_SM.png</ImageURL>
+							<Caption>Soy una imagen en png sin fondo.</Caption>					
+						</ImageContent>
+					</Content>
+					<Content>
+						<ImageContent>
+							<ImageURL>https://static.zerochan.net/Pikachu.full.933229.jpg</ImageURL>	
+							<Caption>En teoría soy una imagen cuadrada.</Caption>							
+						</ImageContent>
+					</Content>
+					<Content>
+						<ImageContent>
+							<ImageURL>http://f.rpp-noticias.io/2018/07/03/043204_639694.png</ImageURL>
+							<Caption>La imagen siguiente no tiene caption.</Caption>					
+						</ImageContent>
+					</Content>
+					<Content>
+						<ImageContent>
+							<ImageURL>http://static.echonest.com/InfiniteGangnamStyle/psy.png</ImageURL>					
+						</ImageContent>
+					</Content>
+				</Category>
+				<Category>
+					<IconType>Video</IconType>
+					<Content>
+						<TextContent>Esta categoría tiene mezcla de texto con imágenes. Veamos un texto ni muy cortito ni muy tan largo. Todo se reduce a la velocidad de la luz cuando gira por el infinito del universo cuántico, mientras el espacio-tiempo se deforma a una velocidad no tan constante que puede apreciarse con un telescopio cuántico.</TextContent>
+					</Content>
+					<Content>
+						<ImageContent>
+							<ImageURL>http://www.i2clipart.com/cliparts/5/8/b/0/clipart-optical-illusion-1-58b0.png</ImageURL>
+							<Caption>Soy una imagen muy pequeña.</Caption>					
+						</ImageContent>
+					</Content>
+					<Content>
+						<TextContent>Solo queda una imagen más.</TextContent>
+					</Content>
+					<Content>
+						<ImageContent>
+							<ImageURL>https://i.amz.mshcdn.com/vHrZnBxjo6ig_9vSaZL8QorZU3Q=/950x534/filters:quality(90)/2012%2F12%2F04%2F4e%2F5awesomeopt.cqt.jpg</ImageURL>
+							<Caption>Precaución, puede causar convulsiones.</Caption>					
+						</ImageContent>
+					</Content>
+				</Category>
+				<Category>
+					<IconType>Information</IconType>
+					<Content>
+						<TextContent>Soy un restobar re loco frente a la uni.</TextContent>
+					</Content>
+					<Content>
+						<TextContent>Soy el segundo content de texto.</TextContent>
+					</Content>
+					<Content>
+						<TextContent>Esta categoría solo tiene texto.</TextContent>
+					</Content>
+					<Content>
+						<TextContent>Soy un texto muuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy largo!</TextContent>
+					</Content>
+				</Category>
+				<Category>
+					<IconType>Information</IconType>
+					<Content>
+						<TextContent>Soy un restobar re loco frente a la uni.</TextContent>
+					</Content>
+					<Content>
+						<TextContent>Soy el segundo content de texto.</TextContent>
+					</Content>
+					<Content>
+						<TextContent>Esta categoría solo tiene texto.</TextContent>
+					</Content>
+					<Content>
+						<TextContent>Soy un texto muuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy largo!</TextContent>
+					</Content>
+				</Category>
+				<Category>
+					<IconType>Information</IconType>
+					<Content>
+						<TextContent>Soy un restobar re loco frente a la uni.</TextContent>
+					</Content>
+					<Content>
+						<TextContent>Soy el segundo content de texto.</TextContent>
+					</Content>
+					<Content>
+						<TextContent>Esta categoría solo tiene texto.</TextContent>
+					</Content>
+					<Content>
+						<TextContent>Soy un texto muuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy largo!</TextContent>
+					</Content>
+				</Category>
+				<Category>
+					<IconType>Information</IconType>
+					<Content>
+						<TextContent>Soy un restobar re loco frente a la uni.</TextContent>
+					</Content>
+					<Content>
+						<TextContent>Soy el segundo content de texto.</TextContent>
+					</Content>
+					<Content>
+						<TextContent>Esta categoría solo tiene texto.</TextContent>
+					</Content>
+					<Content>
+						<TextContent>Soy un texto muuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy largo!</TextContent>
 					</Content>
 				</Category>
 			</Categories>

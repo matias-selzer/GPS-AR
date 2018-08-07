@@ -9,7 +9,7 @@ public class UIManager : MonoBehaviour {
 	public Text title;
 	public GameObject categoryButtonPrefab;
 	public GameObject categoriesContainer;
-	public GameObject contentPrefab;
+	public GameObject textContentPrefab,imageContentPrefab;
 	public GameObject contentContainerPrefab;
 
 	private List<Transform> listOfContentContainers;
@@ -43,7 +43,11 @@ public class UIManager : MonoBehaviour {
 	public void CreateContentForCategory(Category cat, GameObject newContentContainer){
 		//ver scrollbar
 		foreach (Content con in cat.contents) {
-			InstantiateTextContentPanel (con.rawContent,newContentContainer.transform.Find("Viewport").Find("Content"));
+			if (con is ImageContent) {
+				InstantiateImageContentPanel (((ImageContent)con).url, ((ImageContent)con).caption, newContentContainer.transform.Find ("Viewport").Find ("Content"));
+			} else {
+				InstantiateTextContentPanel (con.rawContent, newContentContainer.transform.Find ("Viewport").Find ("Content"));
+			}
 		}
 	}
 
@@ -54,9 +58,16 @@ public class UIManager : MonoBehaviour {
 		return newContentContainer;
 	}
 
+	public void InstantiateImageContentPanel(string url, string caption, Transform parent){
+		GameObject newImageContentPanel = Instantiate (imageContentPrefab)as GameObject;
+		newImageContentPanel.transform.parent = parent;
+		newImageContentPanel.transform.Find("Caption").GetComponent<Text> ().text = caption;
+		StartCoroutine(DownloadTexture(newImageContentPanel.transform.Find("RawImage").GetComponent<RawImage>(),url));
+	}
+
 
 	public void InstantiateTextContentPanel(string textContent, Transform parent){
-		GameObject newTextContentPanel = Instantiate (contentPrefab)as GameObject;
+		GameObject newTextContentPanel = Instantiate (textContentPrefab)as GameObject;
 		newTextContentPanel.transform.parent = parent;
 		newTextContentPanel.transform.GetChild (0).GetComponent<Text> ().text = textContent;
 	}
@@ -87,5 +98,19 @@ public class UIManager : MonoBehaviour {
 			Destroy (t.gameObject);
 		}
 		gameObject.SetActive (false);
+	}
+
+
+
+	IEnumerator DownloadTexture(RawImage target,string URL)
+	{
+		Texture2D tex;
+		tex = new Texture2D(4, 4, TextureFormat.DXT1, false);
+		using (WWW www = new WWW(URL))
+		{
+			yield return www;
+			www.LoadImageIntoTexture(tex);
+			target.texture = tex;
+		}
 	}
 }

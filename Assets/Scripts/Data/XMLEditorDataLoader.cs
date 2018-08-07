@@ -54,6 +54,17 @@ public class XMLEditorDataLoader : DataLoader {
 						foreach (XmlNode textContentNode in contentNode.SelectNodes("TextContent")) {
 							newCategory.contents.Add (new TextContent (textContentNode.InnerText));
 						}
+						foreach (XmlNode imageContentNode in contentNode.SelectNodes("ImageContent")) {
+							string url = "";
+							string caption = "";
+							foreach (XmlNode urlNode in imageContentNode.SelectNodes("ImageURL")) {
+								url=urlNode.InnerText;
+							}
+							foreach (XmlNode captionNode in imageContentNode.SelectNodes("Caption")) {
+								caption=captionNode.InnerText;
+							}
+							newCategory.contents.Add (new ImageContent (url, caption));
+						}
 					}
 					categories.Add (newCategory);
 				}

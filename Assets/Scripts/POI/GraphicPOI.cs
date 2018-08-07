@@ -31,7 +31,8 @@ public class GraphicPOI : MonoBehaviour {
 
 	public void showInformation(){
 		panelInfo.title.text = myPOI.name;
-		panelInfo.ShowPOIAllUIInformation (myPOI.categories);
 		panelInfo.gameObject.SetActive (true);
+		panelInfo.ShowPOIAllUIInformation (myPOI.categories);
+
 	}
 }
