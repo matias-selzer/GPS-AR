@@ -15,6 +15,7 @@ public class Manager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		Screen.SetResolution (800, 480,true);
 		iconsRepository = new IconsRepository ();
 		POIs = new List<POI> ();
 		dataLoader = GetComponent<DataLoader> ();
