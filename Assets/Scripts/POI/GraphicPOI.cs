@@ -9,14 +9,14 @@ public class GraphicPOI : MonoBehaviour {
 	public Text distanceLabel;
 
 	[HideInInspector]
-	public PanelInfoManager panelInfo;
+	public UIManager panelInfo;
 
 	[HideInInspector]
 	public POI myPOI;
 
 
 	void Start(){
-		panelInfo = Resources.FindObjectsOfTypeAll<PanelInfoManager>()[0];
+		panelInfo = Resources.FindObjectsOfTypeAll<UIManager>()[0];
 		transform.GetChild(0).GetComponent<Canvas> ().worldCamera = GameObject.Find ("User").GetComponent<Camera> ();
 	}
 
@@ -30,17 +30,8 @@ public class GraphicPOI : MonoBehaviour {
 	}
 
 	public void showInformation(){
-		//panelInfo.info.text = myPOI.info;
 		panelInfo.title.text = myPOI.name;
-
-		foreach (Category cat in myPOI.categories) {
-			Texture2D tex = IconsRepository.iconTypes [cat.iconType];
-			panelInfo.InstantiateNewCategoryButton (tex);
-			panelInfo.InstantiateContent (cat.contents);
-		}
-
-
-
+		panelInfo.ShowPOIAllUIInformation (myPOI.categories);
 		panelInfo.gameObject.SetActive (true);
 	}
 }

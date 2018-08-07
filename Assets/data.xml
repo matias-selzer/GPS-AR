@@ -46,11 +46,15 @@
 				</Category>
 				<Category>
 					<IconType>Pictures</IconType>
-					<ImageContent>
-						<ImageURL>http://static.t13.cl/images/sizes/1200x675/1510680295-pokemon-yo-te-elijo.jpg</ImageURL>
-						<Caption>Imagen de pokemon</Caption>					
-					</ImageContent>
-					<ImageContent>http://f.rpp-noticias.io/2018/07/03/043204_639694.png</ImageContent>
+					<Content>
+						<ImageContent>
+							<ImageURL>http://static.t13.cl/images/sizes/1200x675/1510680295-pokemon-yo-te-elijo.jpg</ImageURL>
+							<Caption>Imagen de pokemon</Caption>					
+						</ImageContent>
+					</Content>
+					<Content>
+						<ImageContent>http://f.rpp-noticias.io/2018/07/03/043204_639694.png</ImageContent>
+					</Content>
 				</Category>
 			</Categories>
 		</POI>
