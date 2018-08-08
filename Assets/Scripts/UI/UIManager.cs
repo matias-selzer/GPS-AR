@@ -62,8 +62,15 @@ public class UIManager : MonoBehaviour {
 		GameObject newImageContentPanel = Instantiate (imageContentPrefab)as GameObject;
 		newImageContentPanel.transform.parent = parent;
 		newImageContentPanel.transform.Find("Caption").GetComponent<Text> ().text = caption;
-		StartCoroutine(DownloadTexture(newImageContentPanel.transform.Find("RawImage").GetComponent<RawImage>(),url));
+		//StartCoroutine(DownloadTexture(newImageContentPanel.transform.Find("RawImage").GetComponent<RawImage>(),url));
+		Texture2D tex= new Texture2D(4, 4, TextureFormat.DXT1, false);
+		newImageContentPanel.transform.Find ("RawImage").GetComponent<RawImage> ().texture = tex;
+		DataRepository.singleton.LoadImage ( tex, url);
 	}
+
+
+
+
 
 
 	public void InstantiateTextContentPanel(string textContent, Transform parent){

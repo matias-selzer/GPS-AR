@@ -22,7 +22,7 @@ public class Manager : MonoBehaviour {
 		poiLocationManager = new POILocationManager ();
 		dataLoader.LoadData (IconsRepository.iconTypes,POIs);	
 		InstantiatePOIs ();
-		InvokeRepeating ("UpdateIconTypes", 0, 0.1f);
+		InvokeRepeating ("UpdateIconTypes", 0, 1f);
 		InvokeRepeating ("UpdateLocations", 0, 1f);
 	}
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Xml;
+using System;
 
 public class XMLEditorDataLoader : DataLoader {
 
@@ -9,13 +10,19 @@ public class XMLEditorDataLoader : DataLoader {
 	[HideInInspector]
 	public int cantIconTypes;
 
+	private DataRepository dataRepository;
+
 	public override void LoadData(Dictionary<string,Texture2D> iconTypes,List<POI> pois){
+		dataRepository = GameObject.Find ("DataRepository").GetComponent<DataRepository>();
+
 		XmlDocument doc = new XmlDocument ();
 		doc.LoadXml (xmlText);
 		XmlNode rootNode = doc.SelectSingleNode("/Documment/IconTypes");
 		LoadIconTypes (iconTypes,rootNode);
 		rootNode = doc.SelectSingleNode ("/Documment/Data");
 		LoadPOIs (pois,rootNode);
+
+		dataRepository.SavePersistentData ();
 	}
 
 	void LoadPOIs(List<POI> pois,XmlNode rootNode){
@@ -73,6 +80,7 @@ public class XMLEditorDataLoader : DataLoader {
 
 			pois.Add (newPoi);
 		}
+
 	}
 
 
@@ -86,20 +94,12 @@ public class XMLEditorDataLoader : DataLoader {
 				name = nameNode.InnerText;
 			}
 			foreach (XmlNode imageURLNode in iconTypeNode.SelectNodes("ImageURL")) {
-				StartCoroutine (DownloadTexture (iconTypes,name, imageURLNode.InnerText));
+				Texture2D tex=new Texture2D(4, 4, TextureFormat.DXT1, false);
+				dataRepository.LoadImage (tex, imageURLNode.InnerText);
+				iconTypes.Add (name, tex);
 			}
 		}
 	}
 
-	IEnumerator DownloadTexture(Dictionary<string,Texture2D> dic, string name,string URL)
-	{
-		Texture2D tex;
-		tex = new Texture2D(4, 4, TextureFormat.DXT1, false);
-		using (WWW www = new WWW(URL))
-		{
-			yield return www;
-			www.LoadImageIntoTexture(tex);
-			dic.Add (name, tex);
-		}
-	}
+
 }
