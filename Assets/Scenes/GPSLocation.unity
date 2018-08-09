@@ -1383,16 +1383,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0337d5f663005bc458fd1339ea962e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xmlText: "<?xml version=\"1.0\"?> <Documment> \t<IconTypes> \t\t<IconType> \t\t\t<Name>Video</Name>
-    \t\t\t<ImageURL>http://icons.iconarchive.com/icons/graphicloads/100-flat/256/play-icon.png</ImageURL>
+  xmlText: "<?xml version=\"1.0\"?> <Documment> \t<DocummentName>Prueba</DocummentName>
+    \t<IconTypes> \t\t<IconType> \t\t\t<Name>Video</Name> \t\t\t<ImageURL>http://icons.iconarchive.com/icons/graphicloads/100-flat/256/play-icon.png</ImageURL>
     \t\t</IconType> \t\t<IconType> \t\t\t<Name>Text</Name> \t\t\t<ImageURL>http://icons.iconarchive.com/icons/graphicloads/100-flat/256/note-icon.png</ImageURL>
     \t\t</IconType> \t\t<IconType> \t\t\t<Name>Pictures</Name> \t\t\t<ImageURL>http://icons.iconarchive.com/icons/webalys/kameleon.pics/256/Images-icon.png</ImageURL>
     \t\t</IconType> \t\t<IconType> \t\t\t<Name>Location</Name> \t\t\t<ImageURL>http://icons.iconarchive.com/icons/graphicloads/100-flat/256/location-icon.png</ImageURL>
     \t\t</IconType> \t\t<IconType> \t\t\t<Name>Building</Name> \t\t\t<ImageURL>http://icons.iconarchive.com/icons/webalys/kameleon.pics/256/Apartment-icon.png</ImageURL>
     \t\t</IconType> \t\t<IconType> \t\t\t<Name>Information</Name> \t\t\t<ImageURL>http://icons.iconarchive.com/icons/graphicloads/100-flat/256/info-icon.png</ImageURL>
     \t\t</IconType> \t</IconTypes> \t<Data> \t\t<POI> \t\t\t<Name>Unico Restobar</Name>
-    \t\t\t<IconType>Building</IconType> \t\t\t<Location> \t\t\t\t<Lat>-38.702474</Lat>
-    \t\t\t\t<Lon>-62.270346</Lon> \t\t\t</Location> \t\t\t<Categories> \t\t\t\t<Category>
+    \t\t\t<IconType>Building</IconType> \t\t\t<Location> \t\t\t\t<Lat>-38.694821</Lat>
+    \t\t\t\t<Lon>-62.250179</Lon> \t\t\t</Location> \t\t\t<Categories> \t\t\t\t<Category>
     \t\t\t\t\t<IconType>Information</IconType> \t\t\t\t\t<Content> \t\t\t\t\t\t<TextContent>Soy
     un restobar re loco frente a la uni.</TextContent> \t\t\t\t\t</Content> \t\t\t\t\t<Content>
     \t\t\t\t\t\t<TextContent>Soy el segundo content de texto.</TextContent> \t\t\t\t\t</Content>
@@ -1463,7 +1463,7 @@ MonoBehaviour:
     muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy
     muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy muy
     muy muy largo!</TextContent> \t\t\t\t\t</Content> \t\t\t\t</Category> \t\t\t</Categories>
-    \t\t</POI> \t</Data> </Documment>   "
+    \t\t</POI> \t</Data> </Documment>"
   cantIconTypes: 0
 --- !u!1 &1402333042
 GameObject:

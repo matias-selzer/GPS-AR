@@ -32,8 +32,8 @@
 			<Name>Unico Restobar</Name>
 			<IconType>Building</IconType>
 			<Location>
-				<Lat>-38.702474</Lat>
-				<Lon>-62.270346</Lon>
+				<Lat>-38.694821</Lat>
+				<Lon>-62.250179</Lon>
 			</Location>
 			<Categories>
 				<Category>
@@ -171,105 +171,3 @@
 
 
 
-
-
-
-
-<Datos>
-    <PuntoDeInteres>
-        <Nombre>Unico Restobar</Nombre>
-        <CoordenadaGPS>
-            <Latitud>-38.702474</Latitud>
-            <Longitud>-62.270346</Longitud>
-        </CoordenadaGPS>
-        <Categoria>Planta</Categoria>
-        <Descripcion>Soy un restobar re loco frente a la uni</Descripcion>
-        <ComoSoy>Soy gordita y rosada</ComoSoy>
-        <ComoMeRelaciono>Me gusta la humedad</ComoMeRelaciono>
-        <ComoMeAdapto>Muy bien me adapto</ComoMeAdapto>
-        <SabiasQue>Me gusta el sol?</SabiasQue>
-        <Fotos>
-            <Foto>esta va a ser la ruta de una foto</Foto>
-            <Foto>asdasd</Foto>
-        </Fotos>
-        <Videos>
-            <Video>este sera el link del video</Video>
-        </Videos>
-        <Links>
-            <Link>esto sera un link a algo</Link>
-        </Links>
-        <Juego>
-            <Pregunta>Por que me pongo rosa?</Pregunta>
-            <Opciones>
-                <Opcion>Porque si</Opcion>
-                <Opcion>Tengo Pigmentos</Opcion>
-                <Opcion>No lo se</Opcion>
-            </Opciones>
-            <Respuesta>Tengo Pigmentos</Respuesta>
-        </Juego>
-    </PuntoDeInteres>
-    <PuntoDeInteres>
-        <Nombre>Entrada del Parque</Nombre>
-        <CoordenadaGPS>
-            <Latitud>-38.701285</Latitud>
-            <Longitud>-62.271132</Longitud>
-        </CoordenadaGPS>
-        <Categoria>Planta</Categoria>
-        <Descripcion>Soy la descripcion de prueba</Descripcion>
-        <ComoSoy>Soy gordita y rosada</ComoSoy>
-        <ComoMeRelaciono>Me gusta la humedad</ComoMeRelaciono>
-        <ComoMeAdapto>Muy bien me adapto</ComoMeAdapto>
-        <SabiasQue>Me gusta el sol?</SabiasQue>
-        <Fotos>
-            <Foto>esta va a ser la ruta de una foto</Foto>
-            <Foto>asdasd</Foto>
-        </Fotos>
-        <Videos>
-            <Video>este sera el link del video</Video>
-        </Videos>
-        <Links>
-            <Link>esto sera un link a algo</Link>
-        </Links>
-        <Juego>
-            <Pregunta>Por que me pongo rosa?</Pregunta>
-            <Opciones>
-                <Opcion>Porque si</Opcion>
-                <Opcion>Tengo Pigmentos</Opcion>
-                <Opcion>No lo se</Opcion>
-            </Opciones>
-            <Respuesta>Tengo Pigmentos</Respuesta>
-        </Juego>
-    </PuntoDeInteres>
-    <PuntoDeInteres>
-        <Nombre>Esquina Primera Junta y Panama</Nombre>
-        <CoordenadaGPS>
-            <Latitud>-38.702817</Latitud>
-            <Longitud>-62.272409</Longitud>
-        </CoordenadaGPS>
-        <Categoria>Animal</Categoria>
-        <Descripcion>Estoy en la esquina</Descripcion>
-        <ComoSoy>Soy gordita y rosada</ComoSoy>
-        <ComoMeRelaciono>Me gusta la humedad</ComoMeRelaciono>
-        <ComoMeAdapto>Muy bien me adapto</ComoMeAdapto>
-        <SabiasQue>Me gusta el sol?</SabiasQue>
-        <Fotos>
-            <Foto>esta va a ser la ruta de una foto</Foto>
-            <Foto>asdasd</Foto>
-        </Fotos>
-        <Videos>
-            <Video>este sera el link del video</Video>
-        </Videos>
-        <Links>
-            <Link>esto sera un link a algo</Link>
-        </Links>
-        <Juego>
-            <Pregunta>Por que me pongo rosa?</Pregunta>
-            <Opciones>
-                <Opcion>Porque si</Opcion>
-                <Opcion>Tengo Pigmentos</Opcion>
-                <Opcion>No lo se</Opcion>
-            </Opciones>
-            <Respuesta>Tengo Pigmentos</Respuesta>
-        </Juego>
-    </PuntoDeInteres>
-</Datos>
